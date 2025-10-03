@@ -61,7 +61,6 @@ export default function Game() {
 
   const makeMove = (index) => {
     if (!game || game.board[index] || winner) return;
-    if (game.currentPlayer !== socket.id) return;
     
     socket.emit("makeMove", { gameId, userId: socket.id, index });
   };
