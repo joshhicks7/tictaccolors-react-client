@@ -209,7 +209,7 @@ export default function Lobby() {
                   <>
                     <option value={2}>2 Players (1v1)</option>
                     <option value={4}>4 Players (2v2)</option>
-                    <option value={6}>6 Players (3v3)</option>
+                    <option value={6}>6 Players (2v2v2 or 3v3)</option>
                   </>
                 )}
               </select>
