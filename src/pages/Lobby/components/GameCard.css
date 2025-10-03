@@ -1,0 +1,87 @@
+.game-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s;
+}
+
+.game-card:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.game-info h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.game-mode-badge {
+  background: #667eea;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.player-count {
+  color: #666;
+  font-size: 0.95rem;
+  margin-left: auto;
+  margin: 0;
+}
+
+.team-join-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-label {
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.team-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.team-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.team-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .game-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .player-count {
+    margin-left: 0;
+  }
+}
+

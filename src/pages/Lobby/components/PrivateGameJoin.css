@@ -1,0 +1,43 @@
+.private-game-section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+}
+
+.private-game-section h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.game-id-input-group {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.game-id-input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: border-color 0.3s;
+}
+
+.game-id-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.game-id-hint {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+

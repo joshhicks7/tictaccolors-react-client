@@ -1,0 +1,67 @@
+.board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: min(500px, 90vw);
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.board button {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+  font-size: clamp(0.8rem, 3vw, 1.5rem);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: white;
+  color: white;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  min-width: 0;
+}
+
+.board button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.board button:disabled {
+  cursor: not-allowed;
+}
+
+.board button[data-empty="true"] {
+  background: #f8f9fa;
+}
+
+.board button[data-empty="true"]:hover {
+  background: #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .board {
+    gap: 6px;
+    max-width: 95vw;
+  }
+
+  .board button {
+    border-width: 2px;
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .board {
+    gap: 4px;
+  }
+
+  .board button {
+    border-width: 2px;
+    font-size: clamp(0.6rem, 2vw, 0.9rem);
+  }
+}
+

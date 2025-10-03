@@ -1,0 +1,31 @@
+.rematch-section {
+  margin-top: 20px;
+}
+
+.rematch-status {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: #fef3c7;
+  border-radius: 8px;
+  color: #92400e;
+}
+
+.rematch-hint {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.rematch-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .rematch-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+

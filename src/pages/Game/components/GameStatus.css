@@ -1,0 +1,22 @@
+.game-status {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.winner-announcement {
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: celebrate 0.5s ease-in-out;
+}
+
+@keyframes celebrate {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@media (max-width: 768px) {
+  .game-status {
+    font-size: 1rem;
+  }
+}
+
