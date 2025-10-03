@@ -128,7 +128,7 @@ export default function Lobby() {
     return (
       <div className="lobby-container">
         <div className="lobby-card">
-          <h2>Welcome to TicTacColors</h2>
+          <h2>Welcome to Tic Tac Colors</h2>
           
           <ConnectionStatus isConnected={isConnected} />
           
